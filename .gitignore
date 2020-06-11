@@ -1,0 +1,12 @@
+*PackageCache.json
+*ProjectSettings.json
+*.cache
+*.props
+*.backup
+*AllDependencies.json
+*.local/
+*.settings/
+Results/
+Output/
+automation concept.zip
+*.xlsx
