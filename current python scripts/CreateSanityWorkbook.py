@@ -72,7 +72,7 @@ def main():
     sanityWorksheet.column_dimensions['I'].width = 14
     sanityWorksheet['I1'].font = celBold
     sanityWorksheet['I1'].alignment = celCent
-    sanityWorksheet['I1'] = 'OBAN Result'
+    sanityWorksheet['I1'] = 'WebSOP Quote'
 
     sanityWorksheet.column_dimensions['J'].width = 14
     sanityWorksheet['J1'].font = celBold
@@ -80,7 +80,7 @@ def main():
     sanityWorksheet['J1'] = 'Time Stamp'
 
     sanityWorkbook.save(testEnv +'_SR.xlsx')
-##    sanityWorkbook.close()    
+    sanityWorkbook.close()    
 
 
 main()

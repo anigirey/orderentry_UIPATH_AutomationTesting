@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="CPlusQuoteCheck" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,2695" sap2010:WorkflowViewState.IdRef="CPlusQuoteCheck_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="CPlusQuoteCheck" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="786.4,2542.4" sap2010:WorkflowViewState.IdRef="CPlusQuoteCheck_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -47,13 +47,13 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CPlusQuoteCheck" sap:VirtualizedContainerService.HintSize="801,2530" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CPlusQuoteCheck" sap:VirtualizedContainerService.HintSize="796.8,2377.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="759,2438" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence sap:VirtualizedContainerService.HintSize="755.2,2284.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="QCheck" />
         <Variable x:TypeArguments="x:Int32" Name="Qiterations" />
@@ -64,7 +64,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'Grand Total View'" sap:VirtualizedContainerService.HintSize="717,106" sap2010:WorkflowViewState.IdRef="SetFocus_1">
+      <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'Grand Total View'" sap:VirtualizedContainerService.HintSize="713.6,107.2" sap2010:WorkflowViewState.IdRef="SetFocus_1">
         <ui:SetFocus.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2533b3557468a2e538b2ad783a0f2d7c" Selector="&lt;html omit:htmlwindowname='undefined' omit:title='318 805-1188  TEST HSI - Consulting Plus' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' parentid='main_page' tableRow='26' tag='TABLE' /&gt;&lt;webctrl id='section_orderLevelFids' tag='TD' /&gt;">
             <ui:Target.TimeoutMS>
@@ -76,7 +76,7 @@
           </ui:Target>
         </ui:SetFocus.Target>
       </ui:SetFocus>
-      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Quote Table'" sap:VirtualizedContainerService.HintSize="717,106" sap2010:WorkflowViewState.IdRef="GetValue_4">
+      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Quote Table'" sap:VirtualizedContainerService.HintSize="713.6,107.2" sap2010:WorkflowViewState.IdRef="GetValue_4">
         <ui:GetValue.Target>
           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1889a40a942f4bbcd513bcc930dfec91" Selector="&lt;html omit:title='318 805-1188  TEST RPOTS - Consulting Plus' /&gt;&lt;webctrl id='billingTable' tag='TABLE' /&gt;">
             <ui:Target.TimeoutMS>
@@ -91,7 +91,7 @@
           <OutArgument x:TypeArguments="x:String">[QCheck]</OutArgument>
         </ui:GetValue.Value>
       </ui:GetValue>
-      <Assign sap:VirtualizedContainerService.HintSize="717,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign sap:VirtualizedContainerService.HintSize="713.6,60" sap2010:WorkflowViewState.IdRef="Assign_4">
         <Assign.To>
           <OutArgument x:TypeArguments="x:Int32">[Qiterations]</OutArgument>
         </Assign.To>
@@ -99,19 +99,16 @@
           <InArgument x:TypeArguments="x:Int32">0</InArgument>
         </Assign.Value>
       </Assign>
-      <If Condition="[Qcheck.Contains(&quot;?&quot;)]" sap:VirtualizedContainerService.HintSize="717,1854" sap2010:WorkflowViewState.IdRef="If_2">
+      <If Condition="[Qcheck.Contains(&quot;?&quot;)]" sap:VirtualizedContainerService.HintSize="713.6,1697.6" sap2010:WorkflowViewState.IdRef="If_2">
         <If.Then>
-          <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="572,1706" sap2010:WorkflowViewState.IdRef="DoWhile_1">
-            <DoWhile.Condition>
-              <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Qiterations &lt; 3" />
-            </DoWhile.Condition>
-            <Sequence sap:VirtualizedContainerService.HintSize="526,1544" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <DoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="569.6,1548" sap2010:WorkflowViewState.IdRef="DoWhile_1" Condition="[Qiterations &lt; 3]">
+            <Sequence sap:VirtualizedContainerService.HintSize="524.8,1385.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_1">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[Qiterations]</OutArgument>
                 </Assign.To>
@@ -119,7 +116,7 @@
                   <InArgument x:TypeArguments="x:Int32">[Qiterations + 1]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'Back to Order Details Page'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="SetFocus_2">
+              <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'Back to Order Details Page'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="SetFocus_2">
                 <ui:SetFocus.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1f3bba63755ea3af69d293b6a5fdbc2a" Selector="&lt;html omit:htmlwindowname='mainWindow' omit:title='318-805-1188  BPOTS,TEST  - Consulting Plus' /&gt;&lt;webctrl id='BACK' tag='A' /&gt;">
                     <ui:Target.TimeoutMS>
@@ -131,7 +128,7 @@
                   </ui:Target>
                 </ui:SetFocus.Target>
               </ui:SetFocus>
-              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Back to Order Details Page'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Back to Order Details Page'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -153,7 +150,7 @@
                   </ui:Target>
                 </ui:Click.Target>
               </ui:Click>
-              <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'Continue to Oder Validation Page'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="SetFocus_3">
+              <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'Continue to Oder Validation Page'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="SetFocus_3">
                 <ui:SetFocus.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="e004b471ea870305a06231718efc6a57" Selector="&lt;html omit:htmlwindowname='mainWindow' omit:title='654-654-6546  BPOTS, TEST  - Consulting Plus' /&gt;&lt;webctrl id='CONTINUE' tag='A' /&gt;">
                     <ui:Target.TimeoutMS>
@@ -165,7 +162,7 @@
                   </ui:Target>
                 </ui:SetFocus.Target>
               </ui:SetFocus>
-              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Continue to Order Validation Page'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Continue to Order Validation Page'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -187,7 +184,7 @@
                   </ui:Target>
                 </ui:Click.Target>
               </ui:Click>
-              <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'Grand Total View'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="SetFocus_4">
+              <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'Grand Total View'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="SetFocus_4">
                 <ui:SetFocus.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2533b3557468a2e538b2ad783a0f2d7c" Selector="&lt;html omit:htmlwindowname='undefined' omit:title='318 805-1188  TEST HSI - Consulting Plus' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' parentid='main_page' tableRow='26' tag='TABLE' /&gt;&lt;webctrl id='section_orderLevelFids' tag='TD' /&gt;">
                     <ui:Target.TimeoutMS>
@@ -199,35 +196,17 @@
                   </ui:Target>
                 </ui:SetFocus.Target>
               </ui:SetFocus>
-              <ui:CommentOut sap2010:Annotation.AnnotationText="This should clear QCheck of any data before the following Get Text activity. Instead, when this is activated, regardless if there is a &quot;?&quot; in quote, it will behave as if no &quot;?&quot; exists and break the loop. Commented out to have this section run 3x without script error. If &quot;?&quot; persists in quote, it is not a UIP issue." DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,228" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                <ui:CommentOut.Body>
-                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">[QCheck]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">
-                          <Literal x:TypeArguments="x:String" Value="" />
-                        </InArgument>
-                      </Assign.Value>
-                    </Assign>
-                  </Sequence>
-                </ui:CommentOut.Body>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:CommentOut>
-              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Quote Table'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="GetValue_5">
+              <Assign sap:VirtualizedContainerService.HintSize="483.2,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[QCheck]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Quote Table'" sap:VirtualizedContainerService.HintSize="483.2,107.2" sap2010:WorkflowViewState.IdRef="GetValue_5">
                 <ui:GetValue.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1889a40a942f4bbcd513bcc930dfec91" Selector="&lt;html omit:title='318 805-1188  TEST RPOTS - Consulting Plus' /&gt;&lt;webctrl id='billingTable' tag='TABLE' /&gt;">
                     <ui:Target.TimeoutMS>
@@ -242,9 +221,9 @@
                   <OutArgument x:TypeArguments="x:String">[QCheck]</OutArgument>
                 </ui:GetValue.Value>
               </ui:GetValue>
-              <If Condition="[Qcheck.Contains(&quot;?&quot;)]" sap:VirtualizedContainerService.HintSize="484,208" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[Qcheck.Contains(&quot;?&quot;)]" sap:VirtualizedContainerService.HintSize="483.2,209.6" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Else>
-                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[Qiterations]</OutArgument>
                     </Assign.To>
@@ -258,7 +237,7 @@
           </DoWhile>
         </If.Then>
       </If>
-      <Assign sap:VirtualizedContainerService.HintSize="717,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign sap:VirtualizedContainerService.HintSize="713.6,60" sap2010:WorkflowViewState.IdRef="Assign_3">
         <Assign.To>
           <OutArgument x:TypeArguments="x:Int32">[Qiterations]</OutArgument>
         </Assign.To>

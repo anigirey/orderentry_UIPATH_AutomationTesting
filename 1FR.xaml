@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>732,2200.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>958.4,857.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_1FR_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -61,15 +61,15 @@
       <AssemblyReference>UiPath.Python</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_1FR" sap:VirtualizedContainerService.HintSize="712,2140.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_1FR" sap:VirtualizedContainerService.HintSize="475.2,692.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="670.4,2048" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="433.6,600" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence sap:VirtualizedContainerService.HintSize="633.6,1816.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence sap:VirtualizedContainerService.HintSize="633.6,2258.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -150,6 +150,18 @@
               </ui:Target>
             </ui:Click.Target>
           </ui:Click>
+          <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'Local LD Carrier'" sap:VirtualizedContainerService.HintSize="592,107.2" sap2010:WorkflowViewState.IdRef="SetFocus_2">
+            <ui:SetFocus.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9167dab7fe0a7fc5f01c10724637fcda" Selector="&lt;html title=' - Consulting Plus' /&gt;&lt;webctrl id='lpic_w1a12' tag='SELECT' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:SetFocus.Target>
+          </ui:SetFocus>
           <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'Local LD Carrier'" sap:VirtualizedContainerService.HintSize="592,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="NONE 9199">
             <ui:SelectItem.Items>
               <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -216,6 +228,18 @@
               </ui:Target>
             </ui:SelectItem.Target>
           </ui:SelectItem>
+          <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus 'LD Carrier'" sap:VirtualizedContainerService.HintSize="592,107.2" sap2010:WorkflowViewState.IdRef="SetFocus_3">
+            <ui:SetFocus.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1a0d64ccd921a3c5e9e6b4b82e90b776" Selector="&lt;html title=' - Consulting Plus' /&gt;&lt;webctrl id='pic_w1a11' tag='SELECT' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:SetFocus.Target>
+          </ui:SetFocus>
           <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'LD Carrier'" sap:VirtualizedContainerService.HintSize="592,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="NONE NONE">
             <ui:SelectItem.Items>
               <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -282,6 +306,18 @@
               </ui:Target>
             </ui:SelectItem.Target>
           </ui:SelectItem>
+          <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set Focus '1FR - No New Jacks Required'" sap:VirtualizedContainerService.HintSize="592,107.2" sap2010:WorkflowViewState.IdRef="SetFocus_4">
+            <ui:SetFocus.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="68f035adf2889f5799e702d290923338" Selector="&lt;html title=' - Consulting Plus' /&gt;&lt;webctrl id='jackques_w1a21' tableRow='3' tag='INPUT' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:SetFocus.Target>
+          </ui:SetFocus>
           <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click '1FR - No New Jacks Required'" sap:VirtualizedContainerService.HintSize="592,107.2" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
             <ui:Click.CursorPosition>
               <ui:CursorPosition Position="Center">
@@ -384,10 +420,10 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="636.8,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,435.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -395,15 +431,15 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence sap:VirtualizedContainerService.HintSize="375.2,364.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:WriteCell Cell="B9" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="[startTime]" Text="Failed" WorkbookPath="[Environment.CurrentDirectory+&quot;\\Results\\&quot;+exeDate+&quot;\\&quot;+testEnvironment+&quot;\\Summary File.xlsx&quot;]" />
-              <ui:WriteCell Cell="B26" DisplayName="Write Cell 'Reason for Failure'" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[startTime]" Text="[ReasonForFailure]" WorkbookPath="[Environment.CurrentDirectory+&quot;\\Results\\&quot;+exeDate+&quot;\\&quot;+testEnvironment+&quot;\\Summary File.xlsx&quot;]" />
+              <ui:WriteCell Cell="B27" DisplayName="Write Cell 'Reason for Failure'" sap:VirtualizedContainerService.HintSize="333.6,116" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[startTime]" Text="[ReasonForFailure]" WorkbookPath="[Environment.CurrentDirectory+&quot;\\Results\\&quot;+exeDate+&quot;\\&quot;+testEnvironment+&quot;\\Summary File.xlsx&quot;]" />
             </Sequence>
           </ActivityAction>
         </Catch>

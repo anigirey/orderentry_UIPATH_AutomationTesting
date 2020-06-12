@@ -90,47 +90,51 @@ def main():
 
         summaryWorksheet['A15'].font=celBoldL
         summaryWorksheet['A15'].alignment=celLeft
-        summaryWorksheet['A15']='Product Summary Page opened'
+        summaryWorksheet['A15']='Internet Ordering Page opened'
 
         summaryWorksheet['A16'].font=celBoldL
         summaryWorksheet['A16'].alignment=celLeft
-        summaryWorksheet['A16']='Configure Product Page opened'
+        summaryWorksheet['A16']='Product Summary Page opened'
 
         summaryWorksheet['A17'].font=celBoldL
         summaryWorksheet['A17'].alignment=celLeft
-        summaryWorksheet['A17']='Configure Order Page opened'
+        summaryWorksheet['A17']='Configure Product Page opened'
 
         summaryWorksheet['A18'].font=celBoldL
         summaryWorksheet['A18'].alignment=celLeft
-        summaryWorksheet['A18']='Configure OLFIDs Page opened'
+        summaryWorksheet['A18']='Configure Order Page opened'
 
         summaryWorksheet['A19'].font=celBoldL
         summaryWorksheet['A19'].alignment=celLeft
-        summaryWorksheet['A19']='Appointment Scheduler Page opened'
+        summaryWorksheet['A19']='Configure OLFIDs Page opened'
 
         summaryWorksheet['A20'].font=celBoldL
         summaryWorksheet['A20'].alignment=celLeft
-        summaryWorksheet['A20']='Deposit/Advance Payment Page opened'
+        summaryWorksheet['A20']='Appointment Scheduler Page opened'
 
         summaryWorksheet['A21'].font=celBoldL
         summaryWorksheet['A21'].alignment=celLeft
-        summaryWorksheet['A21']='Deposit/Advance Payment Information Page opened'
+        summaryWorksheet['A21']='Deposit/Advance Payment Page opened'
 
         summaryWorksheet['A22'].font=celBoldL
         summaryWorksheet['A22'].alignment=celLeft
-        summaryWorksheet['A22']='Deposit/Advance Payment Success Page opened'
+        summaryWorksheet['A22']='Deposit/Advance Payment Information Page opened'
 
         summaryWorksheet['A23'].font=celBoldL
         summaryWorksheet['A23'].alignment=celLeft
-        summaryWorksheet['A23']='Order Detail Page opened'
+        summaryWorksheet['A23']='Deposit/Advance Payment Success Page opened'
 
         summaryWorksheet['A24'].font=celBoldL
         summaryWorksheet['A24'].alignment=celLeft
-        summaryWorksheet['A24']='Order Validation Confirmation'
+        summaryWorksheet['A24']='Order Detail Page opened'
 
-        summaryWorksheet['A26'].font=celBoldL
-        summaryWorksheet['A26'].alignment=celLeft
-        summaryWorksheet['A26']='Reason for Failure'
+        summaryWorksheet['A25'].font=celBoldL
+        summaryWorksheet['A25'].alignment=celLeft
+        summaryWorksheet['A25']='Order Validation Confirmation'
+
+        summaryWorksheet['A27'].font=celBoldL
+        summaryWorksheet['A27'].alignment=celLeft
+        summaryWorksheet['A27']='Reason for Failure'
 
         # 1FR init
         summaryWorksheet.column_dimensions['B'].width=15
@@ -160,8 +164,9 @@ def main():
         summaryWorksheet['B22']='---'
         summaryWorksheet['B23']='---'
         summaryWorksheet['B24']='---'
-        summaryWorksheet['B26']='---'
-
+        summaryWorksheet['B25']='---'
+        summaryWorksheet['B27']='---'
+        
         # 1FB init
         summaryWorksheet.column_dimensions['C'].width=15
         summaryWorksheet['C1'].font=celBold
@@ -190,13 +195,14 @@ def main():
         summaryWorksheet['C22']='---'
         summaryWorksheet['C23']='---'
         summaryWorksheet['C24']='---'
-        summaryWorksheet['C26']='---'
+        summaryWorksheet['C25']='---'
+        summaryWorksheet['C27']='---'
 
-        # HSI init
+        # HSI/GFR init
         summaryWorksheet.column_dimensions['D'].width=15
         summaryWorksheet['D1'].font=celBold
         summaryWorksheet['D1'].alignment=celCent
-        summaryWorksheet['D1']='HSI'
+        summaryWorksheet['D1']='GFR'
         summaryWorksheet['D2']='---'
         summaryWorksheet['D3']='---'
         summaryWorksheet['D4']='---'
@@ -220,13 +226,14 @@ def main():
         summaryWorksheet['D22']='---'
         summaryWorksheet['D23']='---'
         summaryWorksheet['D24']='---'
-        summaryWorksheet['D26']='---'
+        summaryWorksheet['D25']='---'
+        summaryWorksheet['D27']='---'
 
-        # PRISM init
+        # GFB init
         summaryWorksheet.column_dimensions['E'].width=15
         summaryWorksheet['E1'].font=celBold
         summaryWorksheet['E1'].alignment=celCent
-        summaryWorksheet['E1']='PRISM'
+        summaryWorksheet['E1']='GFB'
         summaryWorksheet['E2']='---'
         summaryWorksheet['E3']='---'
         summaryWorksheet['E4']='---'
@@ -250,7 +257,39 @@ def main():
         summaryWorksheet['E22']='---'
         summaryWorksheet['E23']='---'
         summaryWorksheet['E24']='---'
-        summaryWorksheet['E26']='---'
+        summaryWorksheet['E25']='---'
+        summaryWorksheet['E27']='---'
+
+        # PRISM init
+        summaryWorksheet.column_dimensions['F'].width=15
+        summaryWorksheet['F1'].font=celBold
+        summaryWorksheet['F1'].alignment=celCent
+        summaryWorksheet['F1']='PRISM'
+        summaryWorksheet['F2']='---'
+        summaryWorksheet['F3']='---'
+        summaryWorksheet['F4']='---'
+        summaryWorksheet['F5']='---'
+        summaryWorksheet['F6']='---'
+        summaryWorksheet['F7']='---'
+        summaryWorksheet['F8']='---'
+        summaryWorksheet['F9']='---'
+        summaryWorksheet['F10']='---'
+        summaryWorksheet['F11']='---'
+        summaryWorksheet['F12']='---'
+        summaryWorksheet['F13']='---'
+        summaryWorksheet['F14']='---'
+        summaryWorksheet['F15']='---'
+        summaryWorksheet['F16']='---'
+        summaryWorksheet['F17']='---'
+        summaryWorksheet['F18']='---'
+        summaryWorksheet['F19']='---'
+        summaryWorksheet['F20']='---'
+        summaryWorksheet['F21']='---'
+        summaryWorksheet['F22']='---'
+        summaryWorksheet['F23']='---'
+        summaryWorksheet['F24']='---'
+        summaryWorksheet['F25']='---'
+        summaryWorksheet['F27']='---'
 
         summaryWorkbook.save(currDir+'/Results/'+testDat+'/'+testEnv+'/Summary File.xlsx')
         summaryWorkbook.close()
@@ -334,47 +373,51 @@ def main():
 
             summaryWorksheet['A15'].font=celBoldL
             summaryWorksheet['A15'].alignment=celLeft
-            summaryWorksheet['A15']='Product Summary Page opened'
+            summaryWorksheet['A15']='Internet Ordering Page opened'
 
             summaryWorksheet['A16'].font=celBoldL
             summaryWorksheet['A16'].alignment=celLeft
-            summaryWorksheet['A16']='Configure Product Page opened'
+            summaryWorksheet['A16']='Product Summary Page opened'
 
             summaryWorksheet['A17'].font=celBoldL
             summaryWorksheet['A17'].alignment=celLeft
-            summaryWorksheet['A17']='Configure Order Page opened'
+            summaryWorksheet['A17']='Configure Product Page opened'
 
             summaryWorksheet['A18'].font=celBoldL
             summaryWorksheet['A18'].alignment=celLeft
-            summaryWorksheet['A18']='Configure OLFIDs Page opened'
+            summaryWorksheet['A18']='Configure Order Page opened'
 
             summaryWorksheet['A19'].font=celBoldL
             summaryWorksheet['A19'].alignment=celLeft
-            summaryWorksheet['A19']='Appointment Scheduler Page opened'
+            summaryWorksheet['A19']='Configure OLFIDs Page opened'
 
             summaryWorksheet['A20'].font=celBoldL
             summaryWorksheet['A20'].alignment=celLeft
-            summaryWorksheet['A20']='Deposit/Advance Payment Page opened'
+            summaryWorksheet['A20']='Appointment Scheduler Page opened'
 
             summaryWorksheet['A21'].font=celBoldL
             summaryWorksheet['A21'].alignment=celLeft
-            summaryWorksheet['A21']='Deposit/Advance Payment Information Page opened'
+            summaryWorksheet['A21']='Deposit/Advance Payment Page opened'
 
             summaryWorksheet['A22'].font=celBoldL
             summaryWorksheet['A22'].alignment=celLeft
-            summaryWorksheet['A22']='Deposit/Advance Payment Success Page opened'
+            summaryWorksheet['A22']='Deposit/Advance Payment Information Page opened'
 
             summaryWorksheet['A23'].font=celBoldL
             summaryWorksheet['A23'].alignment=celLeft
-            summaryWorksheet['A23']='Order Detail Page opened'
+            summaryWorksheet['A23']='Deposit/Advance Payment Success Page opened'
 
             summaryWorksheet['A24'].font=celBoldL
             summaryWorksheet['A24'].alignment=celLeft
-            summaryWorksheet['A24']='Order Validation Confirmation'
+            summaryWorksheet['A24']='Order Detail Page opened'
 
-            summaryWorksheet['A26'].font=celBoldL
-            summaryWorksheet['A26'].alignment=celLeft
-            summaryWorksheet['A26']='Reason for Failure'
+            summaryWorksheet['A25'].font=celBoldL
+            summaryWorksheet['A25'].alignment=celLeft
+            summaryWorksheet['A25']='Order Validation Confirmation'
+
+            summaryWorksheet['A27'].font=celBoldL
+            summaryWorksheet['A27'].alignment=celLeft
+            summaryWorksheet['A27']='Reason for Failure'
 
             # 1FR init
             summaryWorksheet.column_dimensions['B'].width=15
@@ -404,7 +447,8 @@ def main():
             summaryWorksheet['B22']='---'
             summaryWorksheet['B23']='---'
             summaryWorksheet['B24']='---'
-            summaryWorksheet['B26']='---'
+            summaryWorksheet['B25']='---'
+            summaryWorksheet['B27']='---'
 
             # 1FB init
             summaryWorksheet.column_dimensions['C'].width=15
@@ -434,13 +478,14 @@ def main():
             summaryWorksheet['C22']='---'
             summaryWorksheet['C23']='---'
             summaryWorksheet['C24']='---'
-            summaryWorksheet['C26']='---'
+            summaryWorksheet['C25']='---'
+            summaryWorksheet['C27']='---'
 
             # HSI init
             summaryWorksheet.column_dimensions['D'].width=15
             summaryWorksheet['D1'].font=celBold
             summaryWorksheet['D1'].alignment=celCent
-            summaryWorksheet['D1']='HSI'
+            summaryWorksheet['D1']='GFR'
             summaryWorksheet['D2']='---'
             summaryWorksheet['D3']='---'
             summaryWorksheet['D4']='---'
@@ -464,13 +509,14 @@ def main():
             summaryWorksheet['D22']='---'
             summaryWorksheet['D23']='---'
             summaryWorksheet['D24']='---'
-            summaryWorksheet['D26']='---'
+            summaryWorksheet['D25']='---'
+            summaryWorksheet['D27']='---'
 
-            # PRISM init
+            # GFB init
             summaryWorksheet.column_dimensions['E'].width=15
             summaryWorksheet['E1'].font=celBold
             summaryWorksheet['E1'].alignment=celCent
-            summaryWorksheet['E1']='PRISM'
+            summaryWorksheet['E1']='GFB'
             summaryWorksheet['E2']='---'
             summaryWorksheet['E3']='---'
             summaryWorksheet['E4']='---'
@@ -494,7 +540,39 @@ def main():
             summaryWorksheet['E22']='---'
             summaryWorksheet['E23']='---'
             summaryWorksheet['E24']='---'
-            summaryWorksheet['E26']='---'
+            summaryWorksheet['E25']='---'
+            summaryWorksheet['E27']='---'
+
+            # PRISM init
+            summaryWorksheet.column_dimensions['F'].width=15
+            summaryWorksheet['F1'].font=celBold
+            summaryWorksheet['F1'].alignment=celCent
+            summaryWorksheet['F1']='PRISM'
+            summaryWorksheet['F2']='---'
+            summaryWorksheet['F3']='---'
+            summaryWorksheet['F4']='---'
+            summaryWorksheet['F5']='---'
+            summaryWorksheet['F6']='---'
+            summaryWorksheet['F7']='---'
+            summaryWorksheet['F8']='---'
+            summaryWorksheet['F9']='---'
+            summaryWorksheet['F10']='---'
+            summaryWorksheet['F11']='---'
+            summaryWorksheet['F12']='---'
+            summaryWorksheet['F13']='---'
+            summaryWorksheet['F14']='---'
+            summaryWorksheet['F15']='---'
+            summaryWorksheet['F16']='---'
+            summaryWorksheet['F17']='---'
+            summaryWorksheet['F18']='---'
+            summaryWorksheet['F19']='---'
+            summaryWorksheet['F20']='---'
+            summaryWorksheet['F21']='---'
+            summaryWorksheet['F22']='---'
+            summaryWorksheet['F23']='---'
+            summaryWorksheet['F24']='---'
+            summaryWorksheet['F25']='---'
+            summaryWorksheet['F27']='---'
 
             summaryWorkbook.save(currDir+'/Results/'+testDat+'/'+testEnv+'/Summary File.xlsx')
             summaryWorkbook.close()
